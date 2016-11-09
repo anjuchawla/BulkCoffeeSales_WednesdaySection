@@ -137,6 +137,7 @@
             this.buttonClear.TabIndex = 4;
             this.buttonClear.Text = "&Clear";
             this.buttonClear.UseVisualStyleBackColor = true;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // buttonFind
             // 
@@ -188,6 +189,7 @@
             this.radioButtonFullPound.TabStop = true;
             this.radioButtonFullPound.Text = "Fu&ll Pound";
             this.radioButtonFullPound.UseVisualStyleBackColor = true;
+            this.radioButtonFullPound.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
             // 
             // radioButtonHalfPound
             // 
@@ -199,6 +201,7 @@
             this.radioButtonHalfPound.TabStop = true;
             this.radioButtonHalfPound.Text = "&Half Pound";
             this.radioButtonHalfPound.UseVisualStyleBackColor = true;
+            this.radioButtonHalfPound.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
             // 
             // radioButtonQuarterPound
             // 
@@ -209,6 +212,7 @@
             this.radioButtonQuarterPound.TabIndex = 0;
             this.radioButtonQuarterPound.Text = "&Quarter Pound";
             this.radioButtonQuarterPound.UseVisualStyleBackColor = true;
+            this.radioButtonQuarterPound.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
             // 
             // printPreviewDialog1
             // 
@@ -237,6 +241,7 @@
             this.Name = "FormCoffeeBulkSales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "R \'n R for Reading and Refreshment";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormCoffeeBulkSales_FormClosing);
             this.Load += new System.EventHandler(this.FormCoffeeBulkSales_Load);
             this.groupBoxCoffeePrices.ResumeLayout(false);
             this.groupBoxCoffeePrices.PerformLayout();
